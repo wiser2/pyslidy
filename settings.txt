@@ -1,0 +1,5 @@
+# settings
+
+# 'kb' for arrow key control, 'hover' for mouse control
+control mode: hover
+

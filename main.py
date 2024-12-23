@@ -187,7 +187,11 @@ boardsize = 4
 tilesize = 100
 board = Board(boardsize, tilesize)
 board.fringe_colour_scheme()
-control_mode = 'hover'
+
+settings = open('settings.txt', 'r')
+for line in settings:
+    if 'control mode' in line:
+        control_mode = line.split(': ')[1].strip()
 
 running = True
 while running:
