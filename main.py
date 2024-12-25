@@ -86,11 +86,13 @@ class Board:
         
         self.empty_tile = self.find_empty_tile(self.boardstate)
 
+
         self.update_colours()
 
         print('scrambled')
 
     def update_colours(self):
+        self.solved_colour_scheme = self.fringe_colour_scheme()
         for y in range(self.size):
             for x in range(self.size):
                 if self.boardstate[y][x] == 0:
