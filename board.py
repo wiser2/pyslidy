@@ -156,8 +156,8 @@ class Board:
 
     def fringe_colour_scheme(self):
         # generate gradient for colours
-        red = Color('orange')
-        violet = Color('yellow')
+        red = Color('red')
+        violet = Color('violet')
         colour_list = list(red.range_to(violet, self.size*2-2))
 
         for colour in colour_list:
