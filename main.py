@@ -12,6 +12,8 @@ font = pygame.font.Font('freesansbold.ttf', 32)
 def solving():
     print('solving')
     board.current_time = 0
+    board.current_mvc = 0
+    board.current_tps = 0
     board.timer.start()
 
     solved = False
